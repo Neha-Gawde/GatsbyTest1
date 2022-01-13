@@ -1,13 +1,14 @@
+import { Link } from "gatsby";
 import React from "react"
+import Layout from "../components/Layout";
 
 function IndexPage() {
   return (
-    <div>
-      <h2>Gatsby Learning....</h2>
-      <h2>About page<a href="/about" target={"_blank"}>Click here</a></h2>
-      <h2>Blog page<a href="/blog" target={"_blank"}>Click here</a></h2>
-      <h2>Contact page<a href="/contact" target={"_blank"}>Click here</a></h2>
-    </div>
+    <Layout>
+      <h4>About page<Link to="/about">Click here</Link></h4>
+      <h4>Blog page<Link to="/blog">Click here</Link></h4>
+      <h4>Contact page<Link to="/contact">Click here</Link></h4>
+    </Layout>
   )
 };
 export default IndexPage;

@@ -1,11 +1,15 @@
 import React from 'react'
+import Layout from '../components/Layout'
+
 
 function ContactPage() {
     return (
-        <div>
-           <h2>Contact</h2> 
-           <p>This is an contact page</p>
-        </div>
+        <Layout>
+
+            <h2>Contact</h2> 
+            <p>This is an contact page</p>
+     
+        </Layout>
     )
 }
 
